@@ -1,12 +1,19 @@
 [package]
-name = "abn-simplify"
+name = "simple-abns"
 version = "0.1.0"
 edition = "2021"
+
+authors = ["Joel Koen <mail@joelkoen.com>"]
+license = "MIT"
+description = "Simplify the ABR's Australian Business Number dataset for easier analysis"
+readme = "README.md"
+repository = "https://github.com/joelkoen/simple-abns"
+keywords = ["abn"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 anyhow = "1.0.82"
 chrono = { version = "0.4.38", features = ["serde"] }
-indicatif = "0.17.8"
 itertools = "0.12.1"
 rayon = "1.10.0"
 serde = { version = "1.0.198", features = ["derive"] }
