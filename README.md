@@ -2,7 +2,7 @@
 
 simple-abns parses the [ABR's Australian Business Number dataset](https://data.gov.au/data/dataset/abn-bulk-extract) and converts it to a simpler JSON format.
 
-You can download a copy of the [converted dataset](https://pub.joel.net.au/datasets/simple-abns/2024-04-24-simple-abns.jsonl.zst). Note that this is not updated automatically - please open an issue if it could use a refresh.
+You can download a copy of the [converted dataset](https://pub.joel.net.au/datasets/simple-abns/2024-11-27-simple-abns.jsonl.zst). Note that this is not updated automatically - please contact me or open an issue if a refresh is long overdue.
 
 You can also find machine-readable names for the entity types the ABR uses in [./entity_types.json](./entity_types.json).
 
