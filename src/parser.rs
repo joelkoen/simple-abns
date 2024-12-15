@@ -267,6 +267,7 @@ impl Helper {
                 (["ABR", "GST"], "GSTStatusFromDate") => set(&mut self.gst_status_since, v)?,
                 (["ABR", "ASICNumber"], "ASICNumberType") => set(&mut self.asic_number_type, v)?,
                 (["ABR", "DGR"], "DGRStatusFromDate") => self.dgr_dates.push(v),
+                (["ABR", "DGR"], "status") if v == "ACT" => (),
                 (["ABR", "DGR", "NonIndividualName"], "type") => {
                     ensure!(v == "DGR", "dgr name with unexpected type: {v}");
                 }

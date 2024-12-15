@@ -10,7 +10,7 @@ mod parser;
 
 fn main() -> Result<()> {
     for i in 1..=20 {
-        let path = format!("raw/20240424_Public{i:02}.xml");
+        let path = format!("raw/20241127_Public{i:02}.xml");
         eprintln!("{path}");
         let file = BufReader::new(File::open(path)?);
         for chunk in &file.lines().enumerate().chunks(65535) {
